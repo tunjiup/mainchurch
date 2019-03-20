@@ -92,6 +92,23 @@
                                     </ul>
                                 </li>
                                 <li>
+                                    <a href="#"><i class="fa fa-money"></i> Tithe<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                        <li>
+                                            <a href="add_tithe.php"><i class="fa fa-credit-card"></i> Post Tithe</a>
+                                        </li>
+                                    <li>
+                                        <a href="reverse_tithe.php"><i class="fa fa-undo"></i> Tithe Reversal</a>
+                                    </li>
+                                    <li>
+                                        <a href="daily_transact_grid.php"><i class="fa fa-history"></i> View Daily Posting</a>
+                                    </li>
+                                    <li>
+                                        <a href="reprint_tithe.php"><i class="fa fa-search"></i> Search Receipt(s)</a>
+                                    </li>
+                                    </ul>
+                                </li>
+                                <li>
                                     <a href="admin_users.php"><i class="fa fa-users fa-fw"></i> Users</a>
                                 </li>
                             </ul>
