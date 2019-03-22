@@ -49,6 +49,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	if ($stat) {
 		$_SESSION['success'] = "Admin user has been updated successfully";
+
+		$db->where('id', $_SESSION['id']);
+		$active_admin_user = $db->getOne("admin_accounts");
+
+		$db->where('id', $admin_user_id);
+		$edited_admin_info = $db->getOne("admin_accounts");
+
+
+        //Edit Admin Successful. write and store activity in admin_activity db table
+        $active_admin_names = $active_admin_user['surname'] . ' ' . $active_admin_user['firstname'] . '(' . $active_admin_user['user_name'] . ')';
+
+        $edited_admin = $edited_admin_info['surname'] . ' ' . $edited_admin_info['firstname'];
+
+        $write_activity = $active_admin_names . ' edited Admin with username ' . $edited_admin_info['user_name'] . '  on ' . date('D, M, d, Y h:i:s: A');
+
+        $_SESSION['edit-admin_activity'] = $write_activity;
+
+        $user_data = array(
+            'admin_id'     => $_SESSION['id'],
+            'session_id'   => session_id(),
+            'date'         => date('Y-m-d H:i:s'),
+            'activity'     => $_SESSION['edit-admin_activity'],
+        );
+        $returned_id = $db->insert('admin_activity', $user_data);
+
+        //Store the activity information in a log file
+        $file = 'logs/log.txt';
+        if($handle = fopen($file, 'a')) {
+            fwrite($handle, "\n" . $_SESSION['edit-admin_activity']);
+            fclose($handle);
+        }
 	} else {
 		$_SESSION['failure'] = "Failed to update Admin user : " . $db->getLastError();
 	}

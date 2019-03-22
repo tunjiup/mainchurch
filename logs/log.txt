@@ -1,0 +1,63 @@
+
+admin_surname Superadmin_lastname logged in as superadmin on Mon, Feb, 25, 2019 09:00:36: PM
+admin_surname Superadmin_lastname logged in as superadmin on Mon, Feb, 25, 2019 09:03:08: PM
+admin_surname Superadmin_lastname logged in as superadmin on Tue, Feb, 26, 2019 09:07:48: PM
+admin_surname Superadmin_lastname logged in as superadmin on Wed, Feb, 27, 2019 12:55:07: PM
+admin_surname Superadmin_lastname logged in as superadmin on Thu, Mar, 07, 2019 06:05:03: PM
+Osikoya Michael logged in as michael89 on Thu, Mar, 07, 2019 06:12:34: PM
+Osikoya Michael logged in as michael89 on Thu, Mar, 07, 2019 06:15:13: PM
+Osikoya Michael logged in as michael89 on Thu, Mar, 07, 2019 06:18:26: PM
+Osikoya Michael logged in as michael89 on Thu, Mar, 07, 2019 06:23:50: PM
+Osikoya Michael logged in as michael89 on Thu, Mar, 07, 2019 06:25:49: PM
+Osikoya Michael logged in as michael89 on Thu, Mar, 07, 2019 06:27:14: PM
+Osikoya Michael logged in as michael89 on Thu, Mar, 07, 2019 06:31:38: PM
+Osikoya Michael logged in as michael89 on Thu, Mar, 07, 2019 06:32:23: PM
+ added a New Person(OnokayeDavid) as Super Admin on Thu, Mar, 07, 2019 06:57:25: PM
+Osikoya Michael logged in as michael89 on Thu, Mar, 07, 2019 06:59:41: PM
+OsikoyaMichael(michael89) added a New Person(OnokayeDavid) as Super Admin on Thu, Mar, 07, 2019 07:06:40: PM
+Osikoya Michael(michael89) added a New Person(Onokaye David) as Super Admin on Thu, Mar, 07, 2019 07:08:55: PM
+ () added a New Person - Onokaye David(Direavtcclo) as Super Admin on Thu, Mar, 07, 2019 07:12:05: PM
+admin_surname Superadmin_lastname logged in as superadmin on Thu, Mar, 07, 2019 07:13:28: PM
+admin_surname Superadmin_lastname(superadmin) added a New Person - Osikoya Michael(isMike) as Super Admin on Thu, Mar, 07, 2019 07:15:44: PM
+Osikoya Michael logged in as isMike on Thu, Mar, 07, 2019 07:16:13: PM
+Osikoya Michael(isMike) added a New Person - Onokaye David(Dravslinking) as Super Admin on Thu, Mar, 07, 2019 07:17:18: PM
+Osikoya Michael logged in as isMike on Thu, Mar, 07, 2019 07:24:15: PM
+Osikoya Michael(isMike) added a New Member (Tolani Adrian) on Thu, Mar, 07, 2019 07:44:12: PM
+Osikoya Michael(isMike) added a New Member (Jane Doe) on Thu, Mar, 07, 2019 07:45:40: PM
+Osikoya Michael(isMike) deleted a Member (Kolawole Olaosebikan)  with the email kolawoleisdope@gmail.com on Thu, Mar, 07, 2019 08:56:19: PM
+Osikoya Michael(isMike) deleted a Member (Jane Doe)  with the email janedoeiscool@gmail.com on Thu, Mar, 07, 2019 08:56:41: PM
+Osikoya Michael(isMike) deleted a Member (Tolani Adrian)  with the email tolaniisokay@gmail.com on Thu, Mar, 07, 2019 08:56:59: PM
+Osikoya Michael(isMike) deleted a Member (Teniola Olrimi)  with the email tennysings@gmail.com on Thu, Mar, 07, 2019 08:57:02: PM
+Osikoya Michael(isMike) deleted a Member (Ade Oluwasola)  with the email tunjiup@gmail.com on Thu, Mar, 07, 2019 08:57:07: PM
+Osikoya Michael(isMike) deleted a Member (Onokaye David)  with the username  on Thu, Mar, 07, 2019 09:02:40: PM
+ () deleted an Admin (Osikoya Michael)  with the username  on Thu, Mar, 07, 2019 09:03:22: PM
+Akinbode Olajimi logged in as superadmin on Thu, Mar, 07, 2019 09:06:36: PM
+Akinbode Olajimi(superadmin) added a New Person - Michael Alexander(ismike()) as Super Admin on Thu, Mar, 07, 2019 09:07:45: PM
+Michael Alexander logged in as ismike() on Thu, Mar, 07, 2019 09:08:46: PM
+Michael Alexander(ismike()) added a New Person - Testing 123(Testing123) as Admin on Thu, Mar, 07, 2019 09:09:29: PM
+Michael Alexander(ismike()) deleted an Admin (Testing 123)  with the username T on Thu, Mar, 07, 2019 09:09:55: PM
+Michael Alexander(ismike()) added a New Person - Testing 123(Testing123) as Admin on Thu, Mar, 07, 2019 09:11:07: PM
+Michael Alexander(ismike()) deleted an Admin (Testing 123)  with the username T on Thu, Mar, 07, 2019 09:11:21: PM
+Michael Alexander(ismike()) added a New Person - Testing 123(Testing123) as Admin on Thu, Mar, 07, 2019 09:12:11: PM
+Michael Alexander(ismike()) deleted an Admin (Testing 123)  with the username T on Thu, Mar, 07, 2019 09:13:01: PM
+Michael Alexander(ismike()) added a New Person - Kolawole Scott(KolaScott) as Admin on Thu, Mar, 07, 2019 09:15:14: PM
+Michael Alexander(ismike()) deleted an Admin (Kolawole Scott)  with the username K on Thu, Mar, 07, 2019 09:15:47: PM
+Michael Alexander(ismike()) added a New Person - Testing 123(Testing123) as Super Admin on Thu, Mar, 07, 2019 09:18:28: PM
+Michael Alexander(ismike()) deleted an Admin (Testing 123)  with the username Testing123 on Thu, Mar, 07, 2019 09:19:07: PM
+Michael Alexander(ismike()) edited an Admin info (Michael Alexander)  on Thu, Mar, 07, 2019 09:43:31: PM
+Michael Alex(ismike()) edited Admin with username ismike()  on Thu, Mar, 07, 2019 09:47:37: PM
+Michael Alex(ismike()) edited Member with the name    on Thu, Mar, 07, 2019 09:51:42: PM
+Michael Alex(ismike()) edited Member with the name Solasite Israelite  on Thu, Mar, 07, 2019 09:52:25: PM
+Michael Alex(ismike()) edited Member with the name Sola Israel  on Thu, Mar, 07, 2019 09:52:55: PM
+Akinbode Olajimi logged in as superadmin on Thu, Mar, 07, 2019 10:02:44: PM
+Akinbode Olajimi(superadmin) edited Member with the name   on Thu, Mar, 07, 2019 10:02:48: PM
+Michael Alex logged in as ismike() on Thu, Mar, 07, 2019 10:03:44: PM
+Michael Alex(ismike())Logged Out on Thu, Mar, 07, 2019 10:03:50: PM
+Akinbode Olajimi logged in as superadmin on Thu, Mar, 07, 2019 10:09:43: PM
+Akinbode Olajimi(superadmin) added a New Person - Michael Alexander(isMike()) as Super Admin on Thu, Mar, 07, 2019 10:10:19: PM
+Akinbode Olajimi(superadmin) Logged Out on Sat, Mar, 09, 2019 08:09:28: PM
+Akinbode Olajimi logged in as superadmin on Sat, Mar, 09, 2019 08:10:10: PM
+Akinbode Olajimi(superadmin) Logged Out on Sun, Mar, 10, 2019 01:36:31: PM
+Akinbode Olajimi logged in as superadmin on Sun, Mar, 10, 2019 01:36:48: PM
+Akinbode Olajimi(superadmin) Logged Out on Mon, Mar, 11, 2019 10:33:36: AM
+Akinbode Olajimi logged in as superadmin on Mon, Mar, 11, 2019 10:45:26: AM

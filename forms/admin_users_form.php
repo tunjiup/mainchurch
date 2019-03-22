@@ -34,7 +34,7 @@
         <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                <input  type="text" name="email" autocomplete="off" placeholder="Email Address" class="form-control" value="<?php echo ($edit) ? $admin_account['user_name'] : ''; ?>" autocomplete="off">
+                <input  type="text" name="email" autocomplete="off" placeholder="Email Address" class="form-control" value="<?php echo ($edit) ? $admin_account['email'] : ''; ?>" autocomplete="off">
             </div>
         </div>
     </div>
