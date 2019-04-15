@@ -34,7 +34,7 @@
         <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                <input  type="text" name="email" autocomplete="off" placeholder="Email Address" class="form-control" value="<?php echo ($edit) ? $admin_account['user_name'] : ''; ?>" autocomplete="off">
+                <input  type="text" name="email" autocomplete="off" placeholder="Email Address" class="form-control" value="<?php echo ($edit) ? $admin_account['email'] : ''; ?>" autocomplete="off">
             </div>
         </div>
     </div>
@@ -64,27 +64,27 @@
             <div class="radio">
                 <label>
                     <?php //echo $admin_account['admin_type'] ?>
-                    <input type="radio" name="admin_type" value="super" required="" <?php echo ($edit && $admin_account['admin_type'] =='super') ? "checked": "" ; ?>/> Super admin
+                    <input type="radio" name="admin_type" value="super" required="" <?php echo ($edit && $admin_account['admin_type'] =='super') ? "checked": "" ; ?> /> Super admin
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="admin_type" value="admin" required="" <?php echo ($edit && $admin_account['admin_type'] =='admin') ? "checked": "" ; ?>/> Admin
+                    <input type="radio" name="admin_type" value="admin" required="" <?php echo ($edit && $admin_account['admin_type'] =='admin') ? "checked": "" ; ?> /> Admin
                 </label>
             </div>
              <div class="radio">
                 <label>
-                    <input type="radio" name="admin_type" value="admin" required="" <?php echo ($edit && $admin_account['admin_type'] =='supervisor') ? "checked": "" ; ?>/> Supervisor
+                    <input type="radio" name="admin_type" value="supercashr" required="" <?php echo ($edit && $admin_account['admin_type'] =='supercashr') ? "checked": "" ; ?> /> Super Cahsier
                 </label>
             </div>
              <div class="radio">
                 <label>
-                    <input type="radio" name="admin_type" value="admin" required="" <?php echo ($edit && $admin_account['admin_type'] =='cashofficer') ? "checked": "" ; ?>/> Cash Officer
+                    <input type="radio" name="admin_type" value="cashier" required="" <?php echo ($edit && $admin_account['admin_type'] =='cashier') ? "checked": "" ; ?> /> Cash Officer
                 </label>
             </div>
                 <div class="radio">
                 <label>
-                    <input type="radio" name="admin_type" value="admin" required="" <?php echo ($edit && $admin_account['admin_type'] =='customerservice') ? "checked": "" ; ?>/> Customer Service
+                    <input type="radio" name="admin_type" value="cust_serv" required="" <?php echo ($edit && $admin_account['admin_type'] =='cust_serv') ? "checked": "" ; ?> /> Customer Service
                 </label>
             </div>
         </div>

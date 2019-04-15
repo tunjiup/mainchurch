@@ -5,6 +5,10 @@
 //if user is Not Logged in, redirect to login.php page.
 if (!isset($_SESSION['user_logged_in'])) {
 	header('Location:login.php');
+}else {
+	require_once "check_day_started.php";
 }
 
- ?>
+
+
+

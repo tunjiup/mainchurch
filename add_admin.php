@@ -4,21 +4,22 @@ require_once './config/config.php';
 require_once 'includes/auth_validate.php';
 
 //Only super admin is allowed to access this page
-if ($_SESSION['admin_type'] !== 'super') {
+if ($_SESSION['admin_type'] !== 'super' && $_SESSION['admin_type'] !== 'supercashr') {
     // show permission denied message
     echo 'Permission Denied';
     exit();
 }
 
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') 
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
+
 	$data_to_store = filter_input_array(INPUT_POST);
     $db = getDbInstance();
-    //Check whether the user name already exists ; 
+    //Check whether the user name already exists ;
     $db->where('user_name',$data_to_store['user_name']);
     $db->get('admin_accounts');
-    
+
     if($db->count >=1){
         $_SESSION['failure'] = "User name already exists";
         header('location: add_admin.php');
@@ -29,15 +30,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     $data_to_store['passwd'] = password_hash($data_to_store['passwd'],PASSWORD_DEFAULT);
     //reset db instance
     $db = getDbInstance();
-    $last_id = $db->insert ('admin_accounts', $data_to_store);
-    if($last_id)
-    {
+    $last_id = $db->insert('admin_accounts', $data_to_store);
+    if ($last_id) {
+        $_SESSION['success'] = "Admin user added successfully!";
 
-    	$_SESSION['success'] = "Admin user added successfully!";
-    	header('location: admin_users.php');
-    	exit();
-    }  
-    
+        //Write accomplished task to a log file and the database. Function definition found in helpers.php
+        save_general_admin_activity_to_log($data_to_store, "admin", "add");
+
+        //redirect user on sucessful addition of admin
+        header('location: admin_users.php');
+        exit();
+    } else {
+        $_SESSION['failure'] = "There was a Problem";
+    }
+
 }
 
 $edit = false;
@@ -51,7 +57,7 @@ require_once 'includes/header.php';
 			<h2 class="page-header">Add User</h2>
 		</div>
 	</div>
-	 <?php 
+	 <?php
     include_once('includes/flash_messages.php');
     ?>
 	<form class="well form-horizontal" action=" " method="post"  id="contact_form" enctype="multipart/form-data">

@@ -1,9 +1,9 @@
-<?php 
+<?php
 session_start();
-require_once 'includes/auth_validate.php';
 require_once './config/config.php';
+require_once 'includes/auth_validate.php';
 $del_id = filter_input(INPUT_POST, 'del_id');
-if ($del_id && $_SERVER['REQUEST_METHOD'] == 'POST') 
+if ($del_id && $_SERVER['REQUEST_METHOD'] == 'POST')
 {
 
 	if($_SESSION['admin_type']!='super'){
@@ -16,11 +16,18 @@ if ($del_id && $_SERVER['REQUEST_METHOD'] == 'POST')
 
     $db = getDbInstance();
     $db->where('id', $member_id);
+    $deleted_member = $db->getOne('members'); //get the member info before deleting so as to save info to a log file
+    $db->where('id', $member_id);
     $status = $db->delete('members');
-    
-    if ($status) 
+
+    if ($status)
     {
         $_SESSION['info'] = "member deleted successfully!";
+
+
+        //Write accomplished task to a log file and the database. Function definition found in helpers.php
+        save_general_admin_activity_to_log($data_to_store, "member", "delete", $deleted_member);
+
         header('location: members.php');
         exit;
     }
@@ -31,5 +38,5 @@ if ($del_id && $_SERVER['REQUEST_METHOD'] == 'POST')
         exit;
 
     }
-    
+
 }

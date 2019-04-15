@@ -4,7 +4,7 @@ require_once './config/config.php';
 require_once 'includes/auth_validate.php';
 
 //Only super admin is allowed to access this page
-if ($_SESSION['admin_type'] !== 'super') {
+if ($_SESSION['admin_type'] !== 'super' && $_SESSION['admin_type'] !== 'supercashr') {
     // show permission denied message
     //header('HTTP/1.1 401 Unauthorized', true, 401);
    // header ('Location: index.php');
@@ -13,7 +13,7 @@ if ($_SESSION['admin_type'] !== 'super') {
 //header( "refresh:5; url=index.php" );
    //exit("401 Unauthorized");
    //exit();
-    
+
     echo "<script type='text/javascript'>alert('Unauthorized to access this page');
 window.location='index.php';
 </script>";
@@ -41,7 +41,7 @@ if ($order_by == "") {
 $db = getDbInstance();
 $select = array('id', 'user_name', 'admin_type');
 
-// If user searches 
+// If user searches
 if ($search_string) {
     $db->where('user_name', '%' . $search_string . '%', 'like');
 }
@@ -87,7 +87,7 @@ include_once 'includes/header.php';
         echo '<div class="alert alert-info">Successfully deleted</div>';
     }
     ?>
-    
+
     <!--    Begin filter section-->
     <div class="well text-center filter-form">
         <form class="form form-inline" action="">
@@ -136,7 +136,7 @@ include_once 'includes/header.php';
         <tbody>
 
             <?php foreach ($result as $row) : ?>
-                
+
             <tr>
                 <td><?php echo $row['id'] ?></td>
                 <td><?php echo htmlspecialchars($row['user_name']) ?></td>
@@ -146,7 +146,7 @@ include_once 'includes/header.php';
                     <a href="edit_admin.php?admin_user_id=<?php echo $row['id']?>&operation=edit" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
 
                     <a href=""  class="btn btn-danger delete_btn" data-toggle="modal" data-target="#confirm-delete-<?php echo $row['id'] ?>" style="margin-right: 8px;"><span class="glyphicon glyphicon-trash"></span>
-                    
+
                 </td>
             </tr>
                 <!-- Delete Confirmation Modal-->
@@ -169,10 +169,10 @@ include_once 'includes/header.php';
                                 </div>
                               </div>
                           </form>
-                          
+
                         </div>
                     </div>
-            <?php endforeach; ?>   
+            <?php endforeach; ?>
         </tbody>
     </table>
     <!--    Pagination links-->

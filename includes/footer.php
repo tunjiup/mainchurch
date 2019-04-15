@@ -18,6 +18,11 @@
     <script src="assets/js/sb-admin-2.js"></script>
     <script src="assets/js/jquery.validate.min.js"></script>
 
+
+    <!-- Javascript server calls for authentication -->
+    <script src="assets/js/authenticate_admin.js"></script>
+
+
 </body>
 
 </html>

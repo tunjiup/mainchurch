@@ -1,0 +1,15 @@
+Tithe transaction was REVERSED by Akinbode Olajimi(superadmin)
+The details are shown below:
+Invoice Number: 0000170
+Transaction ID: TRN4762432
+Amount: 12000.00
+Paid on: 2019-04-15 15:10:44
+Reversed on: Mon, Apr, 15, 2019 03:12:53: PM
+
+Tithe transaction was REVERSED by cashier, Onokaye David(Dravlink)
+The details are shown below:
+Invoice Number: 0000302
+Transaction ID: TRN7478625
+Amount: 20000.00
+Paid on: 2019-04-15 15:49:50
+Reversed on: Mon, Apr, 15, 2019 03:50:59: PM

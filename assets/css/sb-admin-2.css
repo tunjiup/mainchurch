@@ -205,3 +205,65 @@ body {
 label.error{
   color: red;
 }
+
+.end-the-day-para {
+  color: red;
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.end-the-day:hover {
+  background-color: #eee;
+}
+
+
+/* Styles for the div to indicate if the day wants to be ended truly */
+#end-the-day-notification {
+	position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  background: rgba(1, 39, 66, 0.9);
+  z-index: 999999999999999999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  /* display: none; */
+  transform: scale(0);
+  transition: all .2s ease-in-out;
+}
+
+.end-day-info {
+  max-width: 480px;
+  align-self: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+
+#end-the-day-notification .special_btn {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  background: #09a700;
+  padding: 20px;
+  border-radius: 20px 0;
+  min-width: 200px;
+  max-width: 400px;
+  text-align: center;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+#end-the-day-notification .special_btn.end {
+  background:red;
+}
+
